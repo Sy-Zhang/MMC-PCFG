@@ -1,0 +1,63 @@
+MODEL_DIR: ./checkpoints
+RESULT_DIR: ./results
+LOG_DIR: ./log
+CHECKPOINT: ''
+
+DATASET:
+  NAME: YouCook2
+  DATA_ROOT: data/YouCook2/
+  POOLING_TYPE: avg
+  WORD2INT_PATH: challenge-release-1/processed-word2int-2k.pkl
+  INT2WORD_PATH: challenge-release-1/processed-int2word-2k.pkl
+  EXPERTS: ['resnext101', 'senet154', 'i3d', 'r2p1d', 's3dg', 'audio', 'ocr']
+  RESNEXT101_FEATURE_PATH: challenge-release-1/aggregated_imagenet_25fps_256px_stride5_offset0/resnext101_32x48d-fixed_seg-logits.pickle
+  SENET154_FEATURE_PATH: challenge-release-1/aggregated_imagenet_25fps_256px_stride5_offset0/senet154-fixed_seg-logits.pickle
+  I3D_FEATURE_PATH: challenge-release-1/aggregated_i3d_25fps_256px_stride25_offset0_inner_stride1/i3d-fixed_seg-logits.pickle
+  R2P1D_FEATURE_PATH: challenge-release-1/aggregated_r2p1d_30fps_256px_stride32_offset0_inner_stride1/r2p1d-ig65m-fixed_seg-logits.pickle
+  S3DG_FEATURE_PATH: challenge-release-1/aggregated_s3dg_10fps_256px_stride16_offset0_inner_stride1/s3dg-fixed_seg-logits.pickle
+  AUDIO_FEATURE_PATH: challenge-release-1/aggregated_audio/vggish-raw.pickle
+  OCR_FEATURE_PATH: challenge-release-1/aggregated_ocr_feats/ocr-w2v.pkl
+  MAX_TEXT_LENGTH: 20
+
+DATALOADER:
+  WORKERS: 16
+  BATCH_SIZE: 16
+
+MODEL:
+  NAME: VGCPCFGs_MMT
+  PARAMS:
+    position_embedding: sine
+    nhead: 8
+    normalize_before: False
+    num_encoder_layers: 2
+    resnext101_dim: 1000
+    senet154_dim: 1000
+    i3d_dim: 400
+    r2p1d_dim: 359
+    s3dg_dim: 512
+    densenet161_dim: 365
+    audio_dim: 128
+    ocr_dim: 300
+    face_dim: 512
+    speech_dim: 300
+    sem_dim: 512
+    syn_dim: 512
+    word_dim: 512
+    lstm_dim: 512
+    no_imgnorm: False
+    vse_mt_alpha: 0.01
+    vse_lm_alpha: 1.0
+    nt_states: 30
+    t_states: 60
+    h_dim: 512
+    w_dim: 512
+    z_dim: 64
+    s_dim: 256
+    margin: 0.2
+
+OPTIM:
+  NAME: Adam
+  LEARNING_RATE: 0.001
+  BETA1: 0.75
+  GRAD_CLIP: 3.0
+  MAX_EPOCH: 10

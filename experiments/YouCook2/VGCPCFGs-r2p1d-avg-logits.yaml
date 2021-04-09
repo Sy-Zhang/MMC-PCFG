@@ -1,0 +1,44 @@
+MODEL_DIR: ./checkpoints
+RESULT_DIR: ./results
+LOG_DIR: ./log
+CHECKPOINT: ''
+
+DATASET:
+  NAME: YouCook2
+  DATA_ROOT: data/YouCook2/
+  POOLING_TYPE: avg
+  WORD2INT_PATH: challenge-release-1/processed-word2int-2k.pkl
+  INT2WORD_PATH: challenge-release-1/processed-int2word-2k.pkl
+  EXPERTS: ['r2p1d']
+  R2P1D_FEATURE_PATH: challenge-release-1/aggregated_r2p1d_30fps_256px_stride32_offset0_inner_stride1/r2p1d-ig65m-avg-logits.pickle
+  MAX_TEXT_LENGTH: 20
+
+DATALOADER:
+  WORKERS: 16
+  BATCH_SIZE: 16
+
+MODEL:
+  NAME: VGCPCFGs
+  PARAMS:
+    r2p1d_dim: 359
+    sem_dim: 512
+    syn_dim: 512
+    word_dim: 512
+    lstm_dim: 512
+    no_imgnorm: False
+    vse_mt_alpha: 0.01
+    vse_lm_alpha: 1.0
+    nt_states: 30
+    t_states: 60
+    h_dim: 512
+    w_dim: 512
+    z_dim: 64
+    s_dim: 256
+    margin: 0.2
+
+OPTIM:
+  NAME: Adam
+  LEARNING_RATE: 0.001
+  BETA1: 0.75
+  GRAD_CLIP: 3.0
+  MAX_EPOCH: 10

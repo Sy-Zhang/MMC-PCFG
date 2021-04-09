@@ -1,0 +1,22 @@
+MODEL_DIR: ./checkpoints
+RESULT_DIR: ./results
+LOG_DIR: ./log
+CHECKPOINT: ''
+
+DATASET:
+  NAME: DiDeMo
+  DATA_ROOT: data/DiDeMo/
+  MAX_TEXT_LENGTH: 20
+
+DATALOADER:
+  WORKERS: 16
+  BATCH_SIZE: 16
+
+MODEL:
+  NAME: Random
+
+OPTIM:
+  NAME: Adam
+  LEARNING_RATE: 0.0001
+  GRAD_CLIP: 3.0
+  MAX_EPOCH: 30
