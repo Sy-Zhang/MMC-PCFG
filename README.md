@@ -31,8 +31,7 @@ sh scripts/didemo/train.sh
 sh scripts/youcook2/train.sh 
 sh scripts/msrvtt/train.sh 
 ```
-For VC-PCFG and MMC-PCFG, each run will take approximate 2 hours on DiDeMo, 1 hour on YouCook2 and 10 hours on MSRVTT.
- on a single GTX 1080Ti or GTX 2080Ti.
+For VC-PCFG and MMC-PCFG, each run will take approximate 2 hours on DiDeMo, 1 hour on YouCook2 and 10 hours on MSRVTT with a single GTX 1080Ti or GTX 2080Ti.
 
 
 ### Testing
