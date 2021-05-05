@@ -4,6 +4,8 @@ We investigate video-aided grammar induction, which learns a constituency parser
 We explore rich features (e.g. action, object, scene, audio, face, OCR and speech) from videos, taking the recent Compound PCFG as the baseline. 
 We further propose a Multi-Modal Compound PCFG model (MMC-PCFG) to effectively aggregate these rich features from different modalities.
 
+[Arxiv](https://arxiv.org/pdf/2104.04369.pdf)
+
 <img align="right" width="400" height="400" src="figures/illustration.png">
 
 
