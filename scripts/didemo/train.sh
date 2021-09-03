@@ -1,11 +1,3 @@
-CUDA_VISIBLE_DEVICES=5 python parsing/run.py --cfg experiments/DiDeMo/LeftBranching.yaml --verbose
-CUDA_VISIBLE_DEVICES=5 python parsing/run.py --cfg experiments/DiDeMo/RightBranching.yaml --verbose
-
-CUDA_VISIBLE_DEVICES=5 python parsing/run.py --cfg experiments/DiDeMo/Random.yaml --verbose --seed 1110
-CUDA_VISIBLE_DEVICES=5 python parsing/run.py --cfg experiments/DiDeMo/Random.yaml --verbose --seed 1111
-CUDA_VISIBLE_DEVICES=5 python parsing/run.py --cfg experiments/DiDeMo/Random.yaml --verbose --seed 1112
-CUDA_VISIBLE_DEVICES=5 python parsing/run.py --cfg experiments/DiDeMo/Random.yaml --verbose --seed 1113
-
 CUDA_VISIBLE_DEVICES=5 python parsing/run.py --cfg experiments/DiDeMo/CPCFGs.yaml --verbose --seed 1110 --tag 1110
 CUDA_VISIBLE_DEVICES=5 python parsing/run.py --cfg experiments/DiDeMo/CPCFGs.yaml --verbose --seed 1111 --tag 1111
 CUDA_VISIBLE_DEVICES=5 python parsing/run.py --cfg experiments/DiDeMo/CPCFGs.yaml --verbose --seed 1112 --tag 1112
