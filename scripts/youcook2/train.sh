@@ -1,11 +1,3 @@
-CUDA_VISIBLE_DEVICES=6 python parsing/run.py --cfg experiments/YouCook2/LeftBranching.yaml --verbose
-CUDA_VISIBLE_DEVICES=6 python parsing/run.py --cfg experiments/YouCook2/RightBranching.yaml --verbose
-
-CUDA_VISIBLE_DEVICES=6 python parsing/run.py --cfg experiments/YouCook2/Random.yaml --verbose --seed 1111 --tag 1111
-CUDA_VISIBLE_DEVICES=6 python parsing/run.py --cfg experiments/YouCook2/Random.yaml --verbose --seed 1112 --tag 1112
-CUDA_VISIBLE_DEVICES=6 python parsing/run.py --cfg experiments/YouCook2/Random.yaml --verbose --seed 1113 --tag 1113
-CUDA_VISIBLE_DEVICES=6 python parsing/run.py --cfg experiments/YouCook2/Random.yaml --verbose --seed 1115 --tag 1115
-
 CUDA_VISIBLE_DEVICES=6 python parsing/run.py --cfg experiments/YouCook2/CPCFGs-2k.yaml --verbose --seed 1111 --tag 1111
 CUDA_VISIBLE_DEVICES=6 python parsing/run.py --cfg experiments/YouCook2/CPCFGs-2k.yaml --verbose --seed 1112 --tag 1112
 CUDA_VISIBLE_DEVICES=6 python parsing/run.py --cfg experiments/YouCook2/CPCFGs-2k.yaml --verbose --seed 1113 --tag 1113
