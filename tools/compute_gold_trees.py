@@ -20,7 +20,11 @@ if __name__ == '__main__':
     parser = benepar.Parser("benepar_en2")
     for root_dir in ["data/DiDeMo/challenge-release-1/",
                      "data/YouCook2/challenge-release-1/",
-                     "data/MSRVTT/challenge-release-1/"]:
+                     "data/MSRVTT/challenge-release-1/",
+                     "data/DiDeMo/challenge-release-2/",
+                     "data/YouCook2/challenge-release-2/",
+                     "data/MSRVTT/challenge-release-2/",
+                    ]:
         captions = pickle.load(open(os.path.join(root_dir,'processed-captions.pkl'), 'rb'))
 
         sent2tree = {}
