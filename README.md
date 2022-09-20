@@ -19,7 +19,7 @@ We further propose a Multi-Modal Compound PCFG model (MMC-PCFG) to effectively a
 - terminaltables
 - tqdm
 - numpy
-- (Modified) [Torch-Struct](https://github.com/zhaoyanpeng/pytorch-struct)
+- (A forked version) [Torch-Struct](https://github.com/zhaoyanpeng/pytorch-struct)
 - (Optional) [benepar](https://github.com/nikitakit/self-attentive-parser)
 
 
