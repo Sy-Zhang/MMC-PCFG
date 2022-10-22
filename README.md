@@ -27,7 +27,7 @@ We further propose a Multi-Modal Compound PCFG model (MMC-PCFG) to effectively a
 
 ## Quick Start
 
-Please download the data from [google drive](https://drive.google.com/drive/folders/1198D9xpDd52QSOCSwM3HP7ki1L75aMV5?usp=sharing) or [box drive](https://rochester.box.com/s/cj52lgoayvotunmqy1awm214jbbelonv), and save it to the `data` folder.
+Please download the data from [dropbox](https://www.dropbox.com/sh/9gc6aqzmutg4ief/AADynBuWBPj8sdeacj1bSVxDa?dl=0) or [box](https://rochester.box.com/s/cj52lgoayvotunmqy1awm214jbbelonv), and save it to the `data` folder.
 Preprocessing details are described [here](#preprocessing-details).
 
 ### Training
@@ -41,7 +41,7 @@ For VC-PCFG and MMC-PCFG, each run will take approximate 2 hours on DiDeMo, 1 ho
 
 
 ### Testing
-Our trained model are provided in [google drive](https://drive.google.com/drive/folders/1EZ0xh2K49e9jEVK8-A-W0Fzvb0DdV1dW?usp=sharing) or [box drive](https://rochester.box.com/s/off57xg1wt47gjzd8ku9kye5pgy6a99w). Please download them to the `final_checkpoints` folder.
+Our trained model are provided in [dropbox](https://www.dropbox.com/sh/ijvjq49i396qnkw/AADUOYpoXbuEHHTwUhA2B5CCa?dl=0) or [box](https://rochester.box.com/s/off57xg1wt47gjzd8ku9kye5pgy6a99w). Please download them to the `final_checkpoints` folder.
 
 Then, run the following commands for evaluation:
 ```
