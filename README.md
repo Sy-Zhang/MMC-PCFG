@@ -9,7 +9,7 @@ We further propose a Multi-Modal Compound PCFG model (MMC-PCFG) to effectively a
 <img align="right" width="400" height="400" src="figures/illustration.png">
 
 ## News
-- :beers: An extension of our paper is accepted by EMNLP 2022.
+- :beers: Our follow-up work is accepted by EMNLP 2022. [[PDF]](https://arxiv.org/pdf/2210.12309.pdf) [[Code]](https://github.com/Sy-Zhang/PTC-PCFG)
 - :trophy: Our paper wins the **best long paper** award at NAACL 2021.
 - :sunny: Our paper is accepted by NAACL 2021.
 
